@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="debit_sources_array">
+        <item>Food</item>
+        <item>Transport</item>
+        <item>Health</item>
+        <item>Housing</item>
+    </string-array>
+</resources>

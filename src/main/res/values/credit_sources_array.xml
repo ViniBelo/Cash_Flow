@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="credit_sources_array">
+        <item>Salary</item>
+        <item>Extras</item>
+    </string-array>
+</resources>

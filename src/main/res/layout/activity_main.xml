@@ -7,13 +7,124 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilType"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:hint="@string/type"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/spType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilSource"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/source"
+        app:layout_constraintEnd_toEndOf="@+id/tilType"
+        app:layout_constraintStart_toStartOf="@+id/tilType"
+        app:layout_constraintTop_toBottomOf="@+id/tilType">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/spSource"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/value"
+        app:layout_constraintEnd_toEndOf="@+id/tilSource"
+        app:layout_constraintStart_toStartOf="@+id/tilSource"
+        app:layout_constraintTop_toBottomOf="@+id/tilSource">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number|numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilLaunchDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/date"
+        app:layout_constraintEnd_toEndOf="@+id/tilValue"
+        app:layout_constraintStart_toStartOf="@+id/tilValue"
+        app:layout_constraintTop_toBottomOf="@+id/tilValue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLaunchDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btLaunch"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/launch"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        app:icon="@android:drawable/stat_sys_upload_done"
+        app:iconGravity="textEnd"
+        app:iconPadding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btEntries"
+        app:layout_constraintEnd_toEndOf="@+id/tilLaunchDate"
+        app:layout_constraintStart_toStartOf="@+id/tilLaunchDate" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btEntries"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/entries"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        app:icon="@drawable/ic_lists"
+        app:iconGravity="textEnd"
+        app:layout_constraintBottom_toTopOf="@+id/btBalance"
+        app:layout_constraintEnd_toEndOf="@+id/btLaunch"
+        app:layout_constraintStart_toStartOf="@+id/btLaunch" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btBalance"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/balance"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        app:icon="@drawable/ic_balance"
+        app:iconGravity="textEnd"
+        app:iconPadding="2dp"
+        app:iconSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btEntries"
+        app:layout_constraintStart_toStartOf="@+id/btEntries" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
