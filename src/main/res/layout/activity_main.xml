@@ -72,27 +72,27 @@
         android:hint="@string/date"
         app:layout_constraintEnd_toEndOf="@+id/tilValue"
         app:layout_constraintStart_toStartOf="@+id/tilValue"
-        app:layout_constraintTop_toBottomOf="@+id/tilValue">
+        app:layout_constraintTop_toBottomOf="@+id/tilValue" >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etLaunchDate"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="date" />
+            android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btLaunch"
+        android:id="@+id/btSave"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/launch"
+        android:text="@string/save"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textSize="20sp"
-        app:icon="@android:drawable/stat_sys_upload_done"
+        app:icon="@drawable/save"
         app:iconGravity="textEnd"
         app:iconPadding="8dp"
+        app:iconSize="24dp"
         app:layout_constraintBottom_toTopOf="@+id/btEntries"
         app:layout_constraintEnd_toEndOf="@+id/tilLaunchDate"
         app:layout_constraintStart_toStartOf="@+id/tilLaunchDate" />
@@ -105,11 +105,12 @@
         android:text="@string/entries"
         android:textAllCaps="true"
         android:textSize="20sp"
-        app:icon="@drawable/ic_lists"
+        app:icon="@drawable/lists"
         app:iconGravity="textEnd"
+        app:iconSize="28dp"
         app:layout_constraintBottom_toTopOf="@+id/btBalance"
-        app:layout_constraintEnd_toEndOf="@+id/btLaunch"
-        app:layout_constraintStart_toStartOf="@+id/btLaunch" />
+        app:layout_constraintEnd_toEndOf="@+id/btSave"
+        app:layout_constraintStart_toStartOf="@+id/btSave" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btBalance"
@@ -119,10 +120,10 @@
         android:text="@string/balance"
         android:textAllCaps="true"
         android:textSize="20sp"
-        app:icon="@drawable/ic_balance"
+        app:icon="@drawable/balance"
         app:iconGravity="textEnd"
         app:iconPadding="2dp"
-        app:iconSize="22dp"
+        app:iconSize="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btEntries"
         app:layout_constraintStart_toStartOf="@+id/btEntries" />

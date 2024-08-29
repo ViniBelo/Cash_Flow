@@ -4,7 +4,9 @@
     <string name="source">Source</string>
     <string name="value">Value</string>
     <string name="date">Date</string>
-    <string name="launch">Launch</string>
+    <string name="save">Save</string>
     <string name="entries">Entries</string>
     <string name="balance">Balance</string>
+    <string name="field_error">Field must be filled!</string>
+    <string name="success_register_message">Successfully registered cash flow!</string>
 </resources>
