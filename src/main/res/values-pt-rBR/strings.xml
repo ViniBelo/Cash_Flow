@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cash Flow</string>
+    <string name="type">Operação</string>
+    <string name="source">Fonte</string>
+    <string name="value">Valor</string>
+    <string name="date">Data</string>
+    <string name="save">Salvar</string>
+    <string name="entries">Extrato</string>
+    <string name="balance">Saldo</string>
+    <string name="field_error">Campo precisa ser preenchido!</string>
+    <string name="success_register_message">Fluxo de caixa cadastrado com sucesso!</string>
+</resources>
